@@ -1,12 +1,12 @@
 # ERP采集助手正式发布
 
-当前正式版本：v0.12.30。默认图片上传文件夹、GitHub 加速下载与 HTTP 延迟测速，并修复大图重复打开。
+当前正式版本：v0.12.31。修正独立更新器启动、就绪确认、退出交接及故障日志。保留图片文件夹、GitHub 加速下载、HTTP 延迟测速及大图重复打开。
 
 [查看最新版 Release](https://github.com/z892137292/erp-collector-release/releases/latest) · [下载更新包](https://github.com/z892137292/erp-collector-release/releases/latest/download/Collector_Update.zip) · [下载升级说明书](https://github.com/z892137292/erp-collector-release/releases/latest/download/Upgrade_Guide.html)
 
 ## 升级
 
-自动替换 / 重启故障尚未解决，本次建议手动覆盖：退出助手（包括托盘），备份原 resources，解压 Collector_Update.zip，将 payload 内 app 和 extension 覆盖到原 resources。重新打开原 ERP_Collector.exe，确认版本 v0.12.30。例如安装目录为 `D:\下载\ERP_Collector`，覆盖目标就是该目录内的 resources。
+本版修正更新器独立启动、就绪确认和退出交接；旧版本尚未装入此修正，首次请手动覆盖：退出助手（包括托盘），备份原 resources，解压 Collector_Update.zip，将 payload 内 app 和 extension 覆盖到原 resources。重新打开原 ERP_Collector.exe，确认版本 v0.12.31。例如安装目录为 `D:\下载\ERP_Collector`，覆盖目标就是该目录内的 resources。
 
 新电脑先使用 [v0.12.27 完整安装包](https://github.com/z892137292/erp-collector-release/releases/download/v0.12.27/Collector_Setup.exe)，再按上述步骤覆盖本版更新包。本次发布轻量更新包。
 
@@ -22,4 +22,4 @@
 
 每版升级与功能说明书同步放在软件设置和发布附件中。保留现有 ERP、登录、打印机与标签设置；Chrome 扩展沿用手动加载。
 
-14 项本地检查、Windows 界面和窄窗口、安装启动、更新器文件替换 / 回滚检查通过。附件和网络使用测试数据，真实云盘、用户电脑的自动重启与打印输出仍需实机验证。
+19 项本地检查、完整 Windows 构建、界面和窄窗口、安装启动、更新器文件替换 / 回滚检查通过。实际主程序启动函数的中文 / 空格目录覆盖重启、调用进程真正退出后继续更新、退出交接失败保留原程序检查通过。附件和网络使用测试数据，真实云盘、用户电脑的自动重启与打印输出仍需实机验证。
