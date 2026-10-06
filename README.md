@@ -2,7 +2,7 @@
 
 当前正式版本：v0.12.32。独立增加业务标签、按账号恢复布局和到货日／周查询。保留原采集核心、登录、扫码、打印与上传接口。
 
-[查看最新版 Release](https://github.com/z892137292/erp-collector-release/releases/latest) · [下载更新包](https://github.com/z892137292/erp-collector-release/releases/latest/download/Collector_Update.zip) · [下载升级说明书](https://github.com/z892137292/erp-collector-release/releases/latest/download/Upgrade_Guide.html)
+[下载 v0.12.32 完整免安装版](https://github.com/z892137292/erp-collector-release/releases/download/v0.12.32/Collector_Portable.zip) · [查看最新版 Release](https://github.com/z892137292/erp-collector-release/releases/latest) · [下载更新包](https://github.com/z892137292/erp-collector-release/releases/latest/download/Collector_Update.zip) · [下载升级说明书](https://github.com/z892137292/erp-collector-release/releases/latest/download/Upgrade_Guide.html)
 
 ## 升级
 
@@ -10,7 +10,9 @@
 
 v0.12.31 可使用在线更新；v0.12.30 或更早版本首次请手动覆盖：退出助手（包括托盘），备份原 resources，解压 Collector_Update.zip，将 payload 内 app 和 extension 覆盖到原 resources。重新打开原 ERP_Collector.exe，确认版本 v0.12.32。例如安装目录为 `D:\下载\ERP_Collector`，覆盖目标就是该目录内的 resources。
 
-新电脑先使用 [v0.12.27 完整安装包](https://github.com/z892137292/erp-collector-release/releases/download/v0.12.27/Collector_Setup.exe)，再按上述步骤覆盖本版更新包。本次发布轻量更新包。
+新电脑直接下载本页 v0.12.32 的 `Collector_Portable.zip` 完整免安装版，解压整个 ERP_Collector 文件夹到 D:\下载 等可写目录，打开 ERP_Collector.exe 即为 32。无需先安装 27，不要在压缩包中直接运行。Chrome 扩展仍手动加载 resources/extension；以后使用设置中的 GitHub 在线更新。首次安装说明见发布附件 Install_Guide.html。
+
+完整 ZIP 包含运行环境；Collector_Update.zip 仅用于已安装软件的覆盖升级。EXE 安装版暂未上传，下载入口不再推荐 27。原在线更新包和版本文件保持原地址及校验值。
 
 ## 设置和图片
 
